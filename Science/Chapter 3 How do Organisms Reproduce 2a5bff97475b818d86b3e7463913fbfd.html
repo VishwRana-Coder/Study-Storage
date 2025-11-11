@@ -1,0 +1,707 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Chapter 3: How do Organisms Reproduce?</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2a5bff97-475b-818d-86b3-e7463913fbfd" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🧬</span></div><h1 class="page-title">Chapter 3: How do Organisms Reproduce?</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/checkmark-square_gray.svg" style="width:14px;height:14px;display:block"/></span>Notes</th><td><div class="checkbox checkbox-on"></div></td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Performance</th><td></td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Priority</th><td><span class="selected-value select-value-color-red">High</span></td></tr><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/checkmark-square_gray.svg" style="width:14px;height:14px;display:block"/></span>Question Practice</th><td><div class="checkbox checkbox-off"></div></td></tr><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/checkmark-square_gray.svg" style="width:14px;height:14px;display:block"/></span>Watch yt</th><td><div class="checkbox checkbox-on"></div></td></tr></tbody></table></header><div class="page-body"><nav id="2a6bff97-475b-808a-bea9-fca340f75a46" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2a6bff97-475b-80e3-b177-efb953dc53cf">Reproduction</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-8018-809a-c1c55fd9e73c">Why it is necessary?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-8072-b89d-e4a3d577b2f4">Variation</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-8047-954e-c50d866828aa">Types of Reproduction</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2a6bff97-475b-8097-96f8-df88efbce7fb">Asexual Reproduction</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-803d-8899-efba5119ca45">Fission</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a6bff97-475b-8088-ab68-d81ad2e2d5d8">Binary Fission</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a6bff97-475b-80ff-ac70-f58cc28a5f68">Multiple Fission</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a6bff97-475b-8032-a8b3-e9148a5e827f">Difference between Binary and Multiple Fission</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-8013-84d9-ddb717fbf4f4">Fragmentation</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-80e1-a0f9-c233496910ff">Regeneration</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-8022-b0d7-d7bf4aaf9d1e">Budding</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-806a-9841-fd0fb8e22406">Spore Formation</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a6bff97-475b-80c2-a19f-ea83daa69630">Vegetative Propagation</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a6bff97-475b-8013-b235-f5b901d17451">Advantages of Vegetative Propagation</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2a7bff97-475b-8063-a58d-e3fc567d6e4f">Sexual Reproduction</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a7bff97-475b-80eb-809a-fbc306899749">Why the Sexual Mode of Reproduction?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a7bff97-475b-8050-aeca-f51f0d092bad">Sexual Reproduction in plants</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-802a-9691-cea0289b286d">Types of Flower:</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-80df-8353-cbf6c2b10a24">How Reproduction is done</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-8000-a5e1-d61d54be380d">Germination</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-805f-8b4a-c6531d327de6">Pollination</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2a7bff97-475b-80c2-a1d3-eb20fd8d1bff">Reproduction in Humans</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-8072-a101-c4462287a314">Sexual Maturation of Body: Puberty</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-80f9-bb95-e2dc44f406c0">Male Reproductive System</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-80db-8ce2-eae3e0c59819">Female Reproductive System:</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-809a-a37b-c83b67135474">Sexual Intercourse:</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-806f-a76a-d13ebb3e1c77">Fertilization:</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-8046-a4fe-e5523b150731">Male vs Female</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-8097-b13d-e4b001426e52">Placenta</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-8036-a58e-f946ecb207e0">Menstruation</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#2a7bff97-475b-80e4-864d-c7fe8d38a73e">Contraceptive Methods</a></div></nav><h1 id="2a6bff97-475b-80e3-b177-efb953dc53cf" class="">Reproduction</h1><ul id="2a6bff97-475b-8093-8ba8-e343b5c3ed8e" class="bulleted-list"><li style="list-style-type:disc"><strong>Reproduction is the process by which living organism produce new individuals of the same species</strong>.</li></ul><ul id="2a6bff97-475b-8050-bb88-e965920bd43f" class="bulleted-list"><li style="list-style-type:disc">It is <strong>not an essential life process</strong>.</li></ul><h2 id="2a6bff97-475b-8018-809a-c1c55fd9e73c" class="">Why it is necessary?</h2><ul id="2a6bff97-475b-8078-8901-e1783dc75274" class="bulleted-list"><li style="list-style-type:disc"><strong>It ensures the continuity of a particular species on earth</strong>.</li></ul><ul id="2a6bff97-475b-8026-9424-c3e71eb294fd" class="bulleted-list"><li style="list-style-type:disc">To stable population.</li></ul><ul id="2a6bff97-475b-805a-8ca2-e4331e00a598" class="bulleted-list"><li style="list-style-type:disc">For evolution.</li></ul><ul id="2a6bff97-475b-80ec-a4ca-db22461709cb" class="bulleted-list"><li style="list-style-type:disc">Variation would never be found in the same species.</li></ul><h2 id="2a6bff97-475b-8072-b89d-e4a3d577b2f4" class="">Variation</h2><div id="2a6bff97-475b-80c8-aaa6-df887357bdd3" class="column-list"><div id="2a6bff97-475b-80b8-a920-d9b948032501" style="width:50%" class="column"><ul id="2a6bff97-475b-80c1-a4c8-dfba1dba70dc" class="bulleted-list"><li style="list-style-type:disc"><strong>Variation are the differences among individuals of the same species</strong>.</li></ul><ul id="2a6bff97-475b-8061-9977-e0cf9484dd84" class="bulleted-list"><li style="list-style-type:disc">Occurs due to changes in Genetic Material in Nucleus.</li></ul><ul id="2a6bff97-475b-80ee-a5ce-edb87fcaa99c" class="bulleted-list"><li style="list-style-type:disc"><strong>Cells contain Nucleus, and in Nucleus there are chromosomes which contains DNA(Deoxyribo Nucleic Acid)</strong>.</li></ul><ul id="2a6bff97-475b-803a-b97b-c277fd43d801" class="bulleted-list"><li style="list-style-type:disc"><strong>DNA carries the information for making proteins which determines the characteristics</strong>.</li></ul></div><div id="2a6bff97-475b-8061-a115-e8c6c3f12513" style="width:50%" class="column"><figure id="2a6bff97-475b-80dc-a2c1-ce3629c60175" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image.png"><img style="width:288px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image.png"/></a></figure></div></div><ul id="2a6bff97-475b-80ee-8ada-df9ad5ddc25f" class="bulleted-list"><li style="list-style-type:disc">If there are changes in DNA the proteins changes which results in new characteristics.</li></ul><ul id="2a6bff97-475b-8015-9990-d1cb853855b7" class="bulleted-list"><li style="list-style-type:disc"><strong>DNA forms its copy DNA</strong>.</li></ul><ul id="2a6bff97-475b-80ca-814e-d51ce81eb428" class="bulleted-list"><li style="list-style-type:disc"><strong>When there is a mistake in the DNA copy its results in new DNA structure.</strong></li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-80a6-a1f9-f478b9713ea3"><div style="width:100%"><p id="2a6bff97-475b-80cc-b057-c9efa6bc1bf9" class=""><mark class="highlight-blue"><strong>Importance of Variation:</strong></mark></p><ul id="2a6bff97-475b-80b7-8e38-d76578c2dada" class="bulleted-list"><li style="list-style-type:disc"><strong>Variation helps the species to adapt to the changes in the environment</strong>.</li></ul><ul id="2a6bff97-475b-801a-a766-f20c218643db" class="bulleted-list"><li style="list-style-type:disc"><strong>Helps in Evolution</strong>.</li></ul><ul id="2a6bff97-475b-808e-82e5-db42a7dec873" class="bulleted-list"><li style="list-style-type:disc">Variation in DNA results in the varieties of species and formation of new species. </li></ul></div></figure><h2 id="2a6bff97-475b-8047-954e-c50d866828aa" class="">Types of Reproduction</h2><table id="2a6bff97-475b-803b-b20a-dc790e573aa0" class="simple-table"><thead class="simple-table-header"><tr id="2a6bff97-475b-80ef-a27e-fb093126862b"><th id="Vlh}" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Asexual Reproduction</th><th id="Onv&gt;" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Sexual Reproduction</th></tr></thead><tbody><tr id="2a6bff97-475b-8016-89d4-ebc9f4a1623e"><td id="Vlh}" class="" style="width:235.66666666666666px">Single parent is involved.</td><td id="Onv&gt;" class="" style="width:235.66666666666666px">Two parents are involved.</td></tr><tr id="2a6bff97-475b-80eb-be5a-c7cb6fd191ac"><td id="Vlh}" class="" style="width:235.66666666666666px">No Gamete is formed.</td><td id="Onv&gt;" class="" style="width:235.66666666666666px">Gamete is formed.</td></tr><tr id="2a6bff97-475b-808b-a9b2-c5d051dd6c13"><td id="Vlh}" class="" style="width:235.66666666666666px">No fertilisation.</td><td id="Onv&gt;" class="" style="width:235.66666666666666px">Fertilisation occurs.</td></tr><tr id="2a6bff97-475b-8070-b86a-c1f16e12f39c"><td id="Vlh}" class="" style="width:235.66666666666666px">Offspring formed are usually genetically similar. </td><td id="Onv&gt;" class="" style="width:235.66666666666666px">Offspring formed are genetically dissimilar.</td></tr></tbody></table><h1 id="2a6bff97-475b-8097-96f8-df88efbce7fb" class="">Asexual Reproduction</h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-802e-9420-d8c2fde010a5"><div style="width:100%"><p id="2a6bff97-475b-8090-9059-d6039d9cf2a0" class=""><strong>Asexual reproduction is a method of reproduction that produces offspring from a single parent without the fusion of gametes (sex cells).</strong></p></div></figure><h2 id="2a6bff97-475b-803d-8899-efba5119ca45" class="">Fission</h2><p id="2a6bff97-475b-809c-a0ec-c3197cb73f78" class="">Two types:</p><ol type="1" id="2a6bff97-475b-809c-b962-fa7f39f4153b" class="numbered-list" start="1"><li>Binary Fission</li></ol><ol type="1" id="2a6bff97-475b-80b4-9baf-c8b8836bd820" class="numbered-list" start="2"><li>Multiple Fission</li></ol><h3 id="2a6bff97-475b-8088-ab68-d81ad2e2d5d8" class="">Binary Fission</h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-80d9-ab4c-fbd3fd9b1c37"><div style="width:100%"><p id="2a6bff97-475b-80da-8ea5-f2845121c247" class=""><mark class="highlight-blue"><strong>Binary Irregular Fission in Amoeba:</strong></mark></p><figure id="2a6bff97-475b-8036-967f-d442ed6bffa3" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%201.png"><img style="width:650.4807739257812px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%201.png"/></a></figure><ul id="2a6bff97-475b-8018-9ee4-ead76d0562cb" class="bulleted-list"><li style="list-style-type:disc">Amoeba is an unicellular organism.</li></ul><ul id="2a6bff97-475b-80e0-9cda-f4bc3b22837b" class="bulleted-list"><li style="list-style-type:disc">Splitting of cells can take place in any place.</li></ul><ul id="2a6bff97-475b-807d-932b-fb67b159d63a" class="bulleted-list"><li style="list-style-type:disc">Parent cell divides into two daughter cells.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-80ff-b71d-def1f1cbae19"><div style="width:100%"><p id="2a6bff97-475b-80a6-8ecd-da51afdada6e" class=""><mark class="highlight-blue"><strong>Binary Longitudinal Fission in Leishmania:</strong></mark></p><figure id="2a6bff97-475b-80b8-94b7-c173508cc2e7" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%202.png"><img style="width:650.4807739257812px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%202.png"/></a></figure><ul id="2a6bff97-475b-807c-a51d-f66a33aa5f4b" class="bulleted-list"><li style="list-style-type:disc">Leishmania is a unicellular organism.</li></ul><ul id="2a6bff97-475b-8030-b91c-c20c7f6fc229" class="bulleted-list"><li style="list-style-type:disc">Has a whip like structure at one end of cell.</li></ul><ul id="2a6bff97-475b-8068-99b2-cdae3af37aca" class="bulleted-list"><li style="list-style-type:disc">Binary fission occurs in fixed plane which is in relation to whip like structure.</li></ul><ul id="2a6bff97-475b-8017-9eec-fb98a2fbed79" class="bulleted-list"><li style="list-style-type:disc">It causes black fever.</li></ul></div></figure><h3 id="2a6bff97-475b-80ff-ac70-f58cc28a5f68" class="">Multiple Fission</h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-80c0-bd4c-ef6485cf8ef6"><div style="width:100%"><p id="2a6bff97-475b-800e-9960-fdcf37a07415" class=""><mark class="highlight-blue"><strong>Multiple Fission in Plasmodium:</strong></mark></p><figure id="2a6bff97-475b-806b-a8ba-cdceea1407b7" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%203.png"><img style="width:650.4807739257812px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%203.png"/></a></figure><ul id="2a6bff97-475b-8077-8e09-eb51ea947436" class="bulleted-list"><li style="list-style-type:disc">Plasmodium is an unicellular organism.</li></ul><ul id="2a7bff97-475b-8058-9d1d-ce18f33b10dc" class="bulleted-list"><li style="list-style-type:disc">Produces many daughter cells.</li></ul><ul id="2a6bff97-475b-8064-b1ba-fdf4d8f004cc" class="bulleted-list"><li style="list-style-type:disc">Divides by multiple fission.</li></ul><ul id="2a6bff97-475b-807f-83c9-e41555654fa6" class="bulleted-list"><li style="list-style-type:disc">Found in parasite of malaria disease.</li></ul></div></figure><h3 id="2a6bff97-475b-8032-a8b3-e9148a5e827f" class="">Difference between Binary and Multiple Fission</h3><table id="2a6bff97-475b-8071-8ee0-e2475c50b8f2" class="simple-table"><thead class="simple-table-header"><tr id="2a6bff97-475b-8061-9b21-d94006c29a3b"><th id="?{ed" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Binary Fission</th><th id="N;X~" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Multiple Fission</th></tr></thead><tbody><tr id="2a6bff97-475b-8019-885d-cbe6335cceb8"><td id="?{ed" class="" style="width:235.66666666666666px"><strong>In binary fission, the parent organism splits into daughter nuclei, follow by division by cytoplasm, thus resulting in formation of identical individuals.</strong></td><td id="N;X~" class="" style="width:235.66666666666666px"><strong>In multiple fission, the parent body divides into multiple many new daughter individuals</strong>.</td></tr><tr id="2a6bff97-475b-8030-aa57-d8c1e72eabaa"><td id="?{ed" class="" style="width:235.66666666666666px">It occurs during favourable condition.</td><td id="N;X~" class="" style="width:235.66666666666666px">It occurs when organism faces unfavourable condition.</td></tr><tr id="2a6bff97-475b-8048-8628-cd403a499c5c"><td id="?{ed" class="" style="width:235.66666666666666px"><strong>Nucleus divides only once during this form of reproduction</strong>.</td><td id="N;X~" class="" style="width:235.66666666666666px"><strong>Nucleus divides repeatedly to form a large number of nuclei.</strong></td></tr><tr id="2a6bff97-475b-801f-a172-dcecb2bdf475"><td id="?{ed" class="" style="width:235.66666666666666px">Protective covering is not formed.</td><td id="N;X~" class="" style="width:235.66666666666666px">Protective covering cyst, is formed around the organism.</td></tr><tr id="2a6bff97-475b-80d3-bd62-f3fb7059d195"><td id="?{ed" class="" style="width:235.66666666666666px"><strong>Examples:</strong> Amoeba, and Leishmania.</td><td id="N;X~" class="" style="width:235.66666666666666px"><strong>Example:</strong> Plasmodium.</td></tr></tbody></table><h2 id="2a6bff97-475b-8013-84d9-ddb717fbf4f4" class="">Fragmentation</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-80de-b5dd-d08c7236558a"><div style="width:100%"><p id="2a6bff97-475b-8088-9a49-cfcb6ae9f6f6" class=""><mark class="highlight-blue"><strong>Fragmentation in Spirogyra:</strong></mark></p><figure id="2a6bff97-475b-8044-b972-f45b85540747" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%204.png"><img style="width:288px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%204.png"/></a></figure><ul id="2a6bff97-475b-8092-9112-f2eaf2868a2b" class="bulleted-list"><li style="list-style-type:disc">It is a multicellular organism.</li></ul><ul id="2a6bff97-475b-801a-a1cd-ed40a169f53d" class="bulleted-list"><li style="list-style-type:disc"><strong>Breaks into smaller pieces upon maturation</strong>.</li></ul><ul id="2a6bff97-475b-80c0-8470-eb5391c2403d" class="bulleted-list"><li style="list-style-type:disc"><strong>These pieces(fragments) grow into new individuals</strong>.</li></ul></div></figure><h2 id="2a6bff97-475b-80e1-a0f9-c233496910ff" class="">Regeneration</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-8087-8029-c83dcdde67a6"><div style="width:100%"><p id="2a6bff97-475b-80e6-a6b5-e4ae7bb51625" class=""><mark class="highlight-blue"><strong>Regeneration in Planaria:</strong></mark></p><figure id="2a6bff97-475b-8038-8aba-c752fca39ac2" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%205.png"><img style="width:336px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%205.png"/></a></figure><ul id="2a6bff97-475b-80b7-a8a8-c524f9262cc9" class="bulleted-list"><li style="list-style-type:disc"><strong>If the individual is cut or broken up into many pieces, many of these grow into separate individuals</strong>. </li></ul><ul id="2a6bff97-475b-80f9-bb55-e6edf63d4e7e" class="bulleted-list"><li style="list-style-type:disc">This type of asexual reproduction is called regeneration.</li></ul><ul id="2a7bff97-475b-80c5-afa0-f3e83832aae2" class="bulleted-list"><li style="list-style-type:disc"><strong>Regeneration is only done for safety the target is not reproduction</strong>.</li></ul><ul id="2a7bff97-475b-809e-a69b-e0cdb2627fe6" class="bulleted-list"><li style="list-style-type:disc"><strong>It is also found in hydra</strong>.</li></ul></div></figure><h2 id="2a6bff97-475b-8022-b0d7-d7bf4aaf9d1e" class="">Budding</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-80c0-ac0d-d535a41dc56a"><div style="width:100%"><p id="2a6bff97-475b-808a-9ef9-fa27a3d4e17c" class=""><mark class="highlight-blue"><strong>Budding in Hydra:</strong></mark></p><figure id="2a6bff97-475b-807f-a5e6-f97d042c16e6" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%206.png"><img style="width:650.4567260742188px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%206.png"/></a></figure><ul id="2a6bff97-475b-801f-8098-dbadd31ed615" class="bulleted-list"><li style="list-style-type:disc">Hydra is a multicellular organism.</li></ul><ul id="2a6bff97-475b-80ea-8422-f3b765b75d85" class="bulleted-list"><li style="list-style-type:disc"><strong>Hydra uses regenerative cells for reproduction</strong>.</li></ul><ul id="2a6bff97-475b-80a4-9910-ec5d7133acf0" class="bulleted-list"><li style="list-style-type:disc"><strong>Repeated cell division at one specific site, outgrowth and bud develops</strong>.</li></ul><ul id="2a6bff97-475b-8055-a10c-e74d52ab6e84" class="bulleted-list"><li style="list-style-type:disc">Detach from the parent body on maturation.</li></ul><ul id="2a6bff97-475b-8017-8120-eb229a23fe9e" class="bulleted-list"><li style="list-style-type:disc">Become new independent individual.</li></ul></div></figure><h2 id="2a6bff97-475b-806a-9841-fd0fb8e22406" class="">Spore Formation</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a6bff97-475b-80b0-84aa-fbddcbf1fc63"><div style="width:100%"><p id="2a6bff97-475b-8081-b77c-cc4bccc68624" class=""><mark class="highlight-blue"><strong>Spore Formation in Rhizopus:</strong></mark></p><figure id="2a6bff97-475b-808d-8131-d082d809a329" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%207.png"><img style="width:288px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%207.png"/></a></figure><ul id="2a6bff97-475b-80d8-9be5-e05b8560c17c" class="bulleted-list"><li style="list-style-type:disc">Rhizopus is bread mould multicellular organism.</li></ul><ul id="2a6bff97-475b-80cb-867d-f973a1fcd355" class="bulleted-list"><li style="list-style-type:disc">Thread like structure is <strong>hyphae</strong>.</li></ul><ul id="2a6bff97-475b-80bd-966a-ec9fc322deeb" class="bulleted-list"><li style="list-style-type:disc">Blob like structure is <strong>sporangia</strong>.</li></ul><ul id="2a7bff97-475b-8065-bc39-dc52537c3ec5" class="bulleted-list"><li style="list-style-type:disc"><strong>When sporangia bursts the spores are released into the air</strong>.</li></ul><ul id="2a6bff97-475b-8072-9860-eb7db8f5ed76" class="bulleted-list"><li style="list-style-type:disc">Spores develop into new individuals.</li></ul><ul id="2a6bff97-475b-8030-a519-d3387f93b172" class="bulleted-list"><li style="list-style-type:disc"><strong>They covered by thick walls which protect them in unfavourable conditions.</strong></li></ul><ul id="2a6bff97-475b-801b-be8f-c1572733e0f4" class="bulleted-list"><li style="list-style-type:disc"><strong>Spore grow in favourable conditions like moist surface</strong>.</li></ul></div></figure><h2 id="2a6bff97-475b-80c2-a19f-ea83daa69630" class="">Vegetative Propagation</h2><ul id="2a6bff97-475b-801f-a3ef-d4be58c55a1e" class="bulleted-list"><li style="list-style-type:disc"><strong>Parts of plants like roots, stem and leave are cut and planted which develop into new plants</strong>.</li></ul><ul id="2a6bff97-475b-80bc-afcd-e9dcdfee561a" class="bulleted-list"><li style="list-style-type:disc"><strong>Vegetative Propagation by Stem:</strong> Potato, Onion, and Lemon.</li></ul><ul id="2a6bff97-475b-80b6-a7b2-c7b866dac1af" class="bulleted-list"><li style="list-style-type:disc"><strong>Vegetative Propagation by Root: </strong>Sweet Potato, Guava.</li></ul><ul id="2a6bff97-475b-8088-81d5-f355d49ea314" class="bulleted-list"><li style="list-style-type:disc"><strong>Vegetative Propagation by Leaf:</strong> Bryophyllum.</li></ul><h3 id="2a6bff97-475b-8013-b235-f5b901d17451" class="">Advantages of Vegetative Propagation</h3><ul id="2a6bff97-475b-8011-a07e-e06c3f32ea98" class="bulleted-list"><li style="list-style-type:disc"><strong>Plants raised can bear flower and fruits earlier than those produced from seeds</strong>.</li></ul><ul id="2a6bff97-475b-8005-afa5-c0f824f1b165" class="bulleted-list"><li style="list-style-type:disc">Plants can be produced in large number in less time.</li></ul><ul id="2a6bff97-475b-803a-9d85-cdf610c35556" class="bulleted-list"><li style="list-style-type:disc">It is more rapid, easier and cheaper method of multiplication of plants.</li></ul><ul id="2a6bff97-475b-8081-b45a-f2e5d47f3d6b" class="bulleted-list"><li style="list-style-type:disc"><strong>Due to this propagation of plants like banana, orange, rose and jasmine is possible which have lost their capacity to produce seeds</strong>.</li></ul><ul id="2a6bff97-475b-8051-89e3-d4c0ac6ef293" class="bulleted-list"><li style="list-style-type:disc">All plants are genetically similar enough to the parent plant.</li></ul><ul id="2a6bff97-475b-80df-a975-c61bb6c5ce33" class="bulleted-list"><li style="list-style-type:disc"><strong>Desirable character of fruit can be maintained</strong>.</li></ul><table id="2a7bff97-475b-80fe-9705-d7d390ead5df" class="simple-table"><thead class="simple-table-header"><tr id="2a7bff97-475b-80d8-91d1-d712795ada85"><th id="uhZH" class="simple-table-header-color simple-table-header" style="width:182.6610565185547px">Organism</th><th id="cNz[" class="simple-table-header-color simple-table-header" style="width:166.6610565185547px">Cellularity</th><th id="&lt;YGs" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Mode of Reproduction</th><th id="Jyny" class="simple-table-header-color simple-table-header" style="width:153px">Disease</th></tr></thead><tbody><tr id="2a7bff97-475b-8007-9315-dbe3b0d6e37a"><td id="uhZH" class="" style="width:182.6610565185547px">Amoeba</td><td id="cNz[" class="" style="width:166.6610565185547px">Unicellular</td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Binary Irregular Fission</td><td id="Jyny" class="" style="width:153px"></td></tr><tr id="2a7bff97-475b-809a-913f-ed4626b98b06"><td id="uhZH" class="" style="width:182.6610565185547px">Leishmania</td><td id="cNz[" class="" style="width:166.6610565185547px">Unicellular</td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Binary Longitudinal Fission</td><td id="Jyny" class="" style="width:153px">Black Fever</td></tr><tr id="2a7bff97-475b-80d6-9240-f7701f27ce6f"><td id="uhZH" class="" style="width:182.6610565185547px">Plasmodium</td><td id="cNz[" class="" style="width:166.6610565185547px">Unicellular</td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Multiple Fission</td><td id="Jyny" class="" style="width:153px">Malaria</td></tr><tr id="2a7bff97-475b-8007-8026-e0be4cccc3da"><td id="uhZH" class="" style="width:182.6610565185547px">Spirogyra</td><td id="cNz[" class="" style="width:166.6610565185547px">Multicellular</td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Fragmentation</td><td id="Jyny" class="" style="width:153px"></td></tr><tr id="2a7bff97-475b-8083-93e4-ffa00202ec8c"><td id="uhZH" class="" style="width:182.6610565185547px">Planaria</td><td id="cNz[" class="" style="width:166.6610565185547px">Multicellular</td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Regeneration</td><td id="Jyny" class="" style="width:153px"></td></tr><tr id="2a7bff97-475b-802f-8546-d4d29bcfa7e6"><td id="uhZH" class="" style="width:182.6610565185547px">Hydra</td><td id="cNz[" class="" style="width:166.6610565185547px">Multicellular</td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Budding / Regeneration</td><td id="Jyny" class="" style="width:153px"></td></tr><tr id="2a7bff97-475b-800c-9241-db262b25c32a"><td id="uhZH" class="" style="width:182.6610565185547px">Yeast</td><td id="cNz[" class="" style="width:166.6610565185547px"></td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Budding</td><td id="Jyny" class="" style="width:153px"></td></tr><tr id="2a7bff97-475b-8035-84d2-f3fc64581dd4"><td id="uhZH" class="" style="width:182.6610565185547px">Rhizopus</td><td id="cNz[" class="" style="width:166.6610565185547px">Multicellular</td><td id="&lt;YGs" class="" style="width:235.66666666666666px">Spore Formation</td><td id="Jyny" class="" style="width:153px"></td></tr></tbody></table><h1 id="2a7bff97-475b-8063-a58d-e3fc567d6e4f" class="">Sexual Reproduction</h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8075-adda-fe8db4bd3440"><div style="width:100%"><p id="2a7bff97-475b-8015-ac67-e4e6e06d1b95" class=""><strong>Sexual reproduction is a method of reproduction that produces offspring from two  parent with the fusion of gametes (sex cells).</strong></p></div></figure><ul id="2a7bff97-475b-80c4-9bcf-eeab58fbeb30" class="bulleted-list"><li style="list-style-type:disc">Fusion is called Fertilization more specifically.</li></ul><figure id="2a7bff97-475b-801f-a91e-c0c9a491c2b1" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%208.png"><img style="width:691.9832153320312px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%208.png"/></a></figure><h2 id="2a7bff97-475b-80eb-809a-fbc306899749" class="">Why the Sexual Mode of Reproduction?</h2><ul id="2a7bff97-475b-8051-88bf-e6521227526a" class="bulleted-list"><li style="list-style-type:disc">Combine variations from two parents of same species.</li></ul><ul id="2a7bff97-475b-80a9-8ba3-f8fb85ea0b5a" class="bulleted-list"><li style="list-style-type:disc"><strong>Increase chances of survival by creating more variety in population</strong>.</li></ul><h2 id="2a7bff97-475b-8050-aeca-f51f0d092bad" class="">Sexual Reproduction in plants</h2><figure id="2a7bff97-475b-80c7-8aaf-dd268e6e384c" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%209.png"><img style="width:384px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%209.png"/></a></figure><p id="2a7bff97-475b-80a5-9b91-eeb796be6051" class="">Male Reproductive part: <strong>Stamen</strong> (Anther and Filament).</p><p id="2a7bff97-475b-808f-9c48-d75001241b45" class="">Female Reproductive Part: <strong>Pistil</strong> (Stigma, Style, Ovary, Ovule).</p><p id="2a7bff97-475b-8033-8326-e6ef71ff647d" class=""><strong>Petals attract insect for pollination due to its scent and colour</strong>.</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8048-8d60-e78cb10d2d28"><div style="width:100%"><p id="2a7bff97-475b-809b-af64-d58da900c5c4" class=""><mark class="highlight-blue"><strong>Male Reproductive Part (Stamen):</strong></mark></p><figure id="2a7bff97-475b-8069-97c0-e95925048975" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2010.png"><img style="width:192px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2010.png"/></a></figure><ul id="2a7bff97-475b-80a7-a86b-cdcf505b6652" class="bulleted-list"><li style="list-style-type:disc"><strong>Produce Pollen Grains (Male Gamete)</strong>.</li></ul><ul id="2a7bff97-475b-80d2-8a02-c3d7bccd0927" class="bulleted-list"><li style="list-style-type:disc">Pollen Grains travel from Anther to Pistil.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80b8-8652-e1fb41c53260"><div style="width:100%"><p id="2a7bff97-475b-80a7-84ff-d48f5200ed1d" class=""><mark class="highlight-blue"><strong>Female Reproductive Part (Pistil):</strong></mark></p><figure id="2a7bff97-475b-80c0-8a72-d276864a2f76" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2011.png"><img style="width:240px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2011.png"/></a></figure><ul id="2a7bff97-475b-80b3-bd39-fafc6ca40e61" class="bulleted-list"><li style="list-style-type:disc"><strong>Stamen</strong>: Sticky terminal part.</li></ul><ul id="2a7bff97-475b-80fa-9a97-f4e9da7d03e5" class="bulleted-list"><li style="list-style-type:disc"><strong>Style</strong>: Middle elongated part.</li></ul><ul id="2a7bff97-475b-8079-96a1-dc4a813bbaaa" class="bulleted-list"><li style="list-style-type:disc"><strong>Ovary</strong>: Swollen bottom part.</li></ul><p id="2a7bff97-475b-804c-92f1-c81989441659" class=""><strong>Ovary:</strong></p><ul id="2a7bff97-475b-806c-a045-c3c704d596dc" class="bulleted-list"><li style="list-style-type:disc">Contains ovules which <strong>contain egg cell called ovum.</strong></li></ul></div></figure><h3 id="2a7bff97-475b-802a-9691-cea0289b286d" class="">Types of Flower:</h3><table id="2a7bff97-475b-80be-8898-d05416b48ab9" class="simple-table"><thead class="simple-table-header"><tr id="2a7bff97-475b-80a7-94f0-f395839e1a40"><th id="\do{" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Bisexual Flower</th><th id="|fm:" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Unisexual Flower</th></tr></thead><tbody><tr id="2a7bff97-475b-80f7-8e70-f1c670310253"><td id="\do{" class="" style="width:235.66666666666666px">Contains both stamen and pistil.</td><td id="|fm:" class="" style="width:235.66666666666666px">Contains either stamen or pistil.</td></tr><tr id="2a7bff97-475b-802a-8927-d23ce6aa9709"><td id="\do{" class="" style="width:235.66666666666666px"><strong>Examples:</strong> Hibiscus, Mustard.</td><td id="|fm:" class="" style="width:235.66666666666666px"><strong>Examples:</strong> Papaya, Watermelon.</td></tr></tbody></table><h3 id="2a7bff97-475b-80df-8353-cbf6c2b10a24" class="">How Reproduction is done</h3><ol type="1" id="2a7bff97-475b-802f-b972-ccdfafc12db9" class="numbered-list" start="1"><li>Anther contains pollen grain.</li></ol><ol type="1" id="2a7bff97-475b-80d3-a8b3-fe207a5d80b0" class="numbered-list" start="2"><li>Pollen lands on stigma.</li></ol><ol type="1" id="2a7bff97-475b-80bc-81d0-da39d55ac1e5" class="numbered-list" start="3"><li>A tube grow out of the pollen grain.</li></ol><ol type="1" id="2a7bff97-475b-8089-ac1a-df88ca363a83" class="numbered-list" start="4"><li>Male gamete travel to ovule.</li></ol><ol type="1" id="2a7bff97-475b-80e6-8bfb-c34fdeb17d05" class="numbered-list" start="5"><li>Male gamete and female gamete do fertilization and forms zygote.</li></ol><ol type="1" id="2a7bff97-475b-80c0-8384-d0d780beb73f" class="numbered-list" start="6"><li>This zygote will be become embryo.</li></ol><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8094-a77d-f243b8a8e355"><div style="width:100%"><p id="2a7bff97-475b-80dc-9eb3-d60a2c0a5fbc" class=""><mark class="highlight-blue"><strong>After Fusion:</strong></mark></p><ul id="2a7bff97-475b-80fc-8c81-e296de660116" class="bulleted-list"><li style="list-style-type:disc"><strong>Zygote</strong> → Embryo.</li></ul><ul id="2a7bff97-475b-802a-9c1a-dc7138e6ef9f" class="bulleted-list"><li style="list-style-type:disc"><strong>Ovule</strong> → Seed</li></ul><ul id="2a7bff97-475b-804c-9513-c53474f4c36f" class="bulleted-list"><li style="list-style-type:disc"><strong>Ovary</strong> → Fruit.</li></ul><ul id="2a7bff97-475b-801b-bb00-c93d57ce233d" class="bulleted-list"><li style="list-style-type:disc"><strong>Petals, Sepal, Stamen and Style</strong> → Shrivel and Fall off.</li></ul></div></figure><h3 id="2a7bff97-475b-8000-a5e1-d61d54be380d" class="">Germination</h3><ul id="2a7bff97-475b-80c2-a043-fbd77f5a8446" class="bulleted-list"><li style="list-style-type:disc">Process by which a seed starts to grow into a new plant.</li></ul><ul id="2a7bff97-475b-8056-868b-e190c3f7f0c0" class="bulleted-list"><li style="list-style-type:disc">I<strong>t is the development of seed into seedlings under appropriate conditions</strong>.</li></ul><figure id="2a7bff97-475b-80f2-89d7-d91490bda04b" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2012.png"><img style="width:691.9832153320312px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2012.png"/></a></figure><h3 id="2a7bff97-475b-805f-8b4a-c6531d327de6" class="">Pollination</h3><ul id="2a7bff97-475b-8092-b345-dff153581806" class="bulleted-list"><li style="list-style-type:disc"><strong>Transfer of pollen from anther to stigma of flower</strong>.</li></ul><ul id="2a7bff97-475b-80c3-8202-f055fff9530a" class="bulleted-list"><li style="list-style-type:disc">Agent of pollination are wind, water and animals.</li></ul><ul id="2a7bff97-475b-8082-b49b-d5dfe43703da" class="bulleted-list"><li style="list-style-type:disc">Two Types: Self Pollination and Cross Pollination.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-800b-8786-e3ae19988db3"><div style="width:100%"><p id="2a7bff97-475b-80c0-9d26-ea13ea0c4a74" class=""><mark class="highlight-blue"><strong>Self Pollination:</strong></mark></p><ul id="2a7bff97-475b-80be-9759-ef1c936b077b" class="bulleted-list"><li style="list-style-type:disc">Transfer of pollen grains from anther to stigma of either in the same flower or another flower in the same plant.</li></ul><ul id="2a7bff97-475b-80d0-937b-f837fed1966b" class="bulleted-list"><li style="list-style-type:disc"><strong>It does not require any external agency</strong>.</li></ul><ul id="2a7bff97-475b-8057-b20c-d1f8495f15da" class="bulleted-list"><li style="list-style-type:disc">Bother anthers and stigmas mature at the same time.</li></ul><ul id="2a7bff97-475b-800e-a0bc-f4f3a8ee3b3c" class="bulleted-list"><li style="list-style-type:disc">It can occur even when flower is closed.</li></ul><ul id="2a7bff97-475b-80c9-8311-ed6a6de7017c" class="bulleted-list"><li style="list-style-type:disc">Produces <strong>homozygous</strong> offsprings.</li></ul><ul id="2a7bff97-475b-807d-bb8e-c9fe9798aa22" class="bulleted-list"><li style="list-style-type:disc"><strong>Does not introduce any variation</strong>.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80f7-abba-c87a849e7d6d"><div style="width:100%"><p id="2a7bff97-475b-8042-904b-f7d560b1c9df" class=""><mark class="highlight-blue"><strong>Cross Pollination:</strong></mark></p><ul id="2a7bff97-475b-805b-ab9e-c897490d8104" class="bulleted-list"><li style="list-style-type:disc">Transfer of the pollen grains from the anther of one flower to the stigma of another flower on a different plant of same species.</li></ul><ul id="2a7bff97-475b-80d9-9183-ed1c4e6f59dd" class="bulleted-list"><li style="list-style-type:disc"><strong>An external agent is required</strong>.</li></ul><ul id="2a7bff97-475b-8055-a227-d84359b4a826" class="bulleted-list"><li style="list-style-type:disc">Anther and stigmas mature at different time.</li></ul><ul id="2a7bff97-475b-80b0-87a9-c403709ed8ee" class="bulleted-list"><li style="list-style-type:disc">It occurs only when the flower is open.</li></ul><ul id="2a7bff97-475b-80c3-aac5-d66444303a5c" class="bulleted-list"><li style="list-style-type:disc">Produces <strong>heterzygous</strong> offsprings.</li></ul><ul id="2a7bff97-475b-802a-b41a-c5663cd6ca27" class="bulleted-list"><li style="list-style-type:disc"><strong>Introduce variations</strong>. </li></ul><ul id="2a7bff97-475b-80eb-b0f5-f27d72be021f" class="bulleted-list"><li style="list-style-type:disc"><strong>It is better for survival of species</strong>.</li></ul><ul id="2a7bff97-475b-800c-aec0-da8a107d1a8c" class="bulleted-list"><li style="list-style-type:disc"><strong>It mixes genes from two different plants creating more variations, which help plants adapt and survive better in changing environment.</strong></li></ul></div></figure><h2 id="2a7bff97-475b-80c2-a1d3-eb20fd8d1bff" class="">Reproduction in Humans</h2><h3 id="2a7bff97-475b-8072-a101-c4462287a314" class="">Sexual Maturation of Body: Puberty</h3><ul id="2a7bff97-475b-80c6-b7fd-c1dfc2a440b5" class="bulleted-list"><li style="list-style-type:disc"><strong>Adolescence: </strong>The phase of life between childhood and adulthood.</li></ul><ul id="2a7bff97-475b-80f7-8b84-f5dcd485e6eb" class="bulleted-list"><li style="list-style-type:disc"><strong>Puberty: </strong>The time in life, when a boy or a girl becomes sexually mature. it is a process that usually happens between ages of 10 and 14 for girls and age 12 and 16 for boys. It causes physical changes, and effects boys and girls differently. his period during adolescence, generate rate of growth decreases.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80c2-969b-d867afe3cdb5"><div style="width:100%"><p id="2a7bff97-475b-80ee-928e-f0373a7cf3b8" class=""><strong>Common changes in boys and girls:</strong></p><ul id="2a7bff97-475b-8076-aa22-fa3584d1e156" class="bulleted-list"><li style="list-style-type:disc">Thick hair growing in new parts of the body (armpits and genital areas).</li></ul><ul id="2a7bff97-475b-8032-b19e-cedf9083de31" class="bulleted-list"><li style="list-style-type:disc">Darkening of these parts.</li></ul><ul id="2a7bff97-475b-80d7-8566-c8ed89f29a52" class="bulleted-list"><li style="list-style-type:disc">Thinner hair on legs, arms and face.</li></ul><ul id="2a7bff97-475b-8007-a70e-c0643a51d20d" class="bulleted-list"><li style="list-style-type:disc">Skin becomes oily and develop pimples.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80d0-b398-cc15d31b42c3"><div style="width:100%"><p id="2a7bff97-475b-80bd-87cd-c222e920c374" class=""><strong>Changes in boys:</strong></p><ul id="2a7bff97-475b-8073-a737-c0f4d46100bb" class="bulleted-list"><li style="list-style-type:disc">Thick hair growth on face.</li></ul><ul id="2a7bff97-475b-80cc-9f53-e4a5b07201cc" class="bulleted-list"><li style="list-style-type:disc">Voice begins to crack.</li></ul><ul id="2a7bff97-475b-8073-b7ff-fe107f6fc984" class="bulleted-list"><li style="list-style-type:disc">Penis occasionally begins to become enlarged and erect.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80a8-9f7e-cf6130a4403b"><div style="width:100%"><p id="2a7bff97-475b-8002-b25a-dfa34576f748" class=""><strong>Changes in girls:</strong></p><ul id="2a7bff97-475b-8011-b88a-cba58154fce6" class="bulleted-list"><li style="list-style-type:disc">Breast size increases.</li></ul><ul id="2a7bff97-475b-80a7-99b9-f544c22cfea2" class="bulleted-list"><li style="list-style-type:disc">Darkening of nipples.</li></ul><ul id="2a7bff97-475b-808d-b421-e65a9dcfdab2" class="bulleted-list"><li style="list-style-type:disc">Menstruation starts.</li></ul></div></figure><h3 id="2a7bff97-475b-80f9-bb95-e2dc44f406c0" class="">Male Reproductive System</h3><figure id="2a7bff97-475b-80a3-9bc5-f714785dbf15" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2013.png"><img style="width:691.9832153320312px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2013.png"/></a></figure><ul id="2a7bff97-475b-801e-8cf4-c44aa3dd9836" class="bulleted-list"><li style="list-style-type:disc">Male gamete is called Sperm.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-807e-9550-e9cd87e22a24"><div style="width:100%"><p id="2a7bff97-475b-8066-8488-daaad9973ecc" class=""><mark class="highlight-blue"><strong>Scrotum: </strong></mark></p><p id="2a7bff97-475b-80ff-9dc6-d616edfc3a10" class=""><strong>Maintain the low temperature of the testes</strong> (2°C - 2.5°C) lower than the normal internal body temperature.</p></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80c8-b971-c2bf3c55b522"><div style="width:100%"><p id="2a7bff97-475b-8066-a354-fd590f506f2a" class=""><mark class="highlight-blue"><strong>Testis:</strong></mark></p><ul id="2a7bff97-475b-8067-a5f1-d36d1ec2ef6d" class="bulleted-list"><li style="list-style-type:disc"><strong>Produces sperm cells.</strong></li></ul><ul id="2a7bff97-475b-80c3-ab45-ebe3f128e655" class="bulleted-list"><li style="list-style-type:disc"><strong>Produce the hormone testosterone:</strong><ul id="2a7bff97-475b-8080-ac57-f4f6071bc838" class="bulleted-list"><li style="list-style-type:circle">Regulates formation of sperms.</li></ul><ul id="2a7bff97-475b-806a-9a02-f0d40f805e05" class="bulleted-list"><li style="list-style-type:circle">Changes at the time of puberty.</li></ul></li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80ec-8bad-c2d4cf319fdd"><div style="width:100%"><p id="2a7bff97-475b-800d-be02-eed37118e0f0" class=""><mark class="highlight-blue"><strong>Vas Deferens:</strong></mark></p><ul id="2a7bff97-475b-80f6-8405-c5ee010e8366" class="bulleted-list"><li style="list-style-type:disc"><strong>Carries sperm towards urethra</strong>.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80e9-ba4b-e749e3b22810"><div style="width:100%"><p id="2a7bff97-475b-80e4-9f46-c24f5ca716e7" class=""><mark class="highlight-blue"><strong>Seminal Vesicle and Prostate Gland:</strong></mark></p><ul id="2a7bff97-475b-8093-a1d0-dce083efbb9e" class="bulleted-list"><li style="list-style-type:disc"><strong>Add their secretions</strong>.</li></ul><ul id="2a7bff97-475b-8094-b297-d7445b27659b" class="bulleted-list"><li style="list-style-type:disc">Put sperms in fluid which makes their transport easier.</li></ul><ul id="2a7bff97-475b-8019-aa38-cd1254e98b37" class="bulleted-list"><li style="list-style-type:disc">Provides nutrition.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8031-b932-e9e96c5edbcf"><div style="width:100%"><p id="2a7bff97-475b-80fe-95d9-d7d5acabeb97" class=""><mark class="highlight-blue"><strong>Urethra:</strong></mark></p><ul id="2a7bff97-475b-806b-82f9-cf568978d39c" class="bulleted-list"><li style="list-style-type:disc"><strong>Common passage for both semen and urine</strong>.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8050-bc90-c95fa43f2451"><div style="width:100%"><p id="2a7bff97-475b-8060-a305-c65d8b6b0c9c" class=""><mark class="highlight-blue"><strong>Penis: </strong></mark></p><ul id="2a7bff97-475b-80ad-892e-e58a2a7b5f02" class="bulleted-list"><li style="list-style-type:disc"><strong>Deposits sperm into the vagina during insemination (sexual intercourse)</strong>.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-805a-af5a-c94577ba877a"><div style="width:100%"><p id="2a7bff97-475b-807b-8f2e-de3a056bd57d" class=""><mark class="highlight-blue"><strong>Semen:</strong></mark></p><ul id="2a7bff97-475b-8096-bf04-ea30ff6310cc" class="bulleted-list"><li style="list-style-type:disc"><strong>Semen is whitest fluid that contains sperm cells and a nourishing, protective fluid produced by glands like seminal vesicle and prostate gland</strong>.</li></ul></div></figure><h3 id="2a7bff97-475b-80db-8ce2-eae3e0c59819" class="">Female Reproductive System:</h3><figure id="2a7bff97-475b-809d-8353-d1b164b7bdfe" class="image"><a href="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2014.png"><img style="width:480px" src="Chapter%203%20How%20do%20Organisms%20Reproduce/image%2014.png"/></a></figure><ul id="2a7bff97-475b-80cd-9831-d5362f13afbc" class="bulleted-list"><li style="list-style-type:disc">Female gamete is called Ovum.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-803c-ba02-f5e77578d6b1"><div style="width:100%"><p id="2a7bff97-475b-805b-8ac2-dd5e13228f06" class=""><mark class="highlight-blue"><strong>Ovary:</strong></mark></p><ul id="2a7bff97-475b-8038-80b8-efbbbae5d293" class="bulleted-list"><li style="list-style-type:disc">Site of <strong>ovum development</strong>.</li></ul><ul id="2a7bff97-475b-8064-b2f3-e816bcb9a8f8" class="bulleted-list"><li style="list-style-type:disc"><strong>Contains thousands of immature eggs, some of these start maturing on reaching puberty</strong>.</li></ul><ul id="2a7bff97-475b-803d-98a9-fd9fcbb4bf41" class="bulleted-list"><li style="list-style-type:disc">One egg is released every month by one of the ovaries.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8056-84a2-c5cabedfa3ff"><div style="width:100%"><p id="2a7bff97-475b-80bd-92bc-ca66bd694d78" class=""><mark class="highlight-blue"><strong>Fallopian Tubes:</strong></mark></p><ul id="2a7bff97-475b-80c4-8881-caa7caa1bf2e" class="bulleted-list"><li style="list-style-type:disc"><strong>Carry ovum from the ovary to the uterus.</strong></li></ul><ul id="2a7bff97-475b-806f-b986-f8fc4d643c0d" class="bulleted-list"><li style="list-style-type:disc">Site of fertilization.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8096-b435-f4ee19352022"><div style="width:100%"><p id="2a7bff97-475b-80f1-abff-c1b84e915842" class=""><mark class="highlight-blue"><strong>Uterus:</strong></mark></p><ul id="2a7bff97-475b-80d8-893f-f920ff76d0c5" class="bulleted-list"><li style="list-style-type:disc"><strong>Elastic bag like structure in which the embryo and foetus develop</strong>.</li></ul><ul id="2a7bff97-475b-808c-a448-f1d57a244489" class="bulleted-list"><li style="list-style-type:disc">Involved in menstruation. </li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80ce-a5a6-fd6f0979117b"><div style="width:100%"><p id="2a7bff97-475b-80c5-98e2-ed94457921e3" class=""><mark class="highlight-blue"><strong>Cervix:</strong></mark></p><ul id="2a7bff97-475b-8095-a706-d26586c055e9" class="bulleted-list"><li style="list-style-type:disc">Separates the vagina from the uterus.</li></ul><ul id="2a7bff97-475b-80b9-87ed-cf7cf9569bc7" class="bulleted-list"><li style="list-style-type:disc"><strong>Dilates during birth to allow the fetus to leave the uterus</strong>.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8002-b76f-c3be9c5f889a"><div style="width:100%"><p id="2a7bff97-475b-80d5-8e2f-fef80a395775" class=""><mark class="highlight-blue"><strong>Vagina:</strong></mark></p><ul id="2a7bff97-475b-80db-887c-dd0d872f8be4" class="bulleted-list"><li style="list-style-type:disc"><strong>Provides a passageway for sperm and menstrual flow.</strong></li></ul><ul id="2a7bff97-475b-8043-bfcc-d98b725a7e49" class="bulleted-list"><li style="list-style-type:disc"><strong>Functions as the birth canal</strong>.</li></ul></div></figure><h3 id="2a7bff97-475b-809a-a37b-c83b67135474" class="">Sexual Intercourse:</h3><ul id="2a7bff97-475b-8056-a9dc-c0a2435d747b" class="bulleted-list"><li style="list-style-type:disc">Sperm enters through the vaginal passage.</li></ul><ul id="2a7bff97-475b-8017-8850-e2ce2ade411f" class="bulleted-list"><li style="list-style-type:disc">Travel upwards.</li></ul><ul id="2a7bff97-475b-80dd-922a-e5afef19acad" class="bulleted-list"><li style="list-style-type:disc">Reach fallopian tubes.</li></ul><ul id="2a7bff97-475b-80ba-8610-d1f169814c51" class="bulleted-list"><li style="list-style-type:disc">Encounter egg.</li></ul><ul id="2a7bff97-475b-8052-8b1c-cec13e8a4940" class="bulleted-list"><li style="list-style-type:disc">Fertilizes it.</li></ul><h3 id="2a7bff97-475b-806f-a76a-d13ebb3e1c77" class="">Fertilization:</h3><ul id="2a7bff97-475b-807c-86fc-c60f6a2a16e0" class="bulleted-list"><li style="list-style-type:disc"><strong>Fertilized egg (zygote) divides to form ball of cells</strong>. </li></ul><ul id="2a7bff97-475b-8070-ac0b-df9bba31e387" class="bulleted-list"><li style="list-style-type:disc">Implanted in the lining of the uterus.</li></ul><ul id="2a7bff97-475b-8032-8003-f1df04a49045" class="bulleted-list"><li style="list-style-type:disc">Grows and Develop organs to become foetus.</li></ul><h3 id="2a7bff97-475b-8046-a4fe-e5523b150731" class="">Male vs Female</h3><table id="2a7bff97-475b-802a-bd54-e73a2caaf1fb" class="simple-table"><thead class="simple-table-header"><tr id="2a7bff97-475b-800e-a8be-ee6a3214fe74"><th id="Fb[C" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Male Gamete</th><th id="lt[a" class="simple-table-header-color simple-table-header" style="width:235.66666666666666px">Female Gamete</th></tr></thead><tbody><tr id="2a7bff97-475b-8002-83d0-de9dd871cf80"><td id="Fb[C" class="" style="width:235.66666666666666px">Smallest Cell</td><td id="lt[a" class="" style="width:235.66666666666666px">Largest Cell</td></tr><tr id="2a7bff97-475b-8011-90a3-d39ef84187b3"><td id="Fb[C" class="" style="width:235.66666666666666px">Motile</td><td id="lt[a" class="" style="width:235.66666666666666px">Non-Motile</td></tr><tr id="2a7bff97-475b-80d1-a22e-f64c1ff0e98f"><td id="Fb[C" class="" style="width:235.66666666666666px">Do not store food</td><td id="lt[a" class="" style="width:235.66666666666666px">Store food</td></tr><tr id="2a7bff97-475b-807d-ac91-e362be4334ae"><td id="Fb[C" class="" style="width:235.66666666666666px">Produced in testes</td><td id="lt[a" class="" style="width:235.66666666666666px">Produces in Ovary</td></tr><tr id="2a7bff97-475b-801e-b689-d1c4b0624b9c"><td id="Fb[C" class="" style="width:235.66666666666666px">Produced in large numbers</td><td id="lt[a" class="" style="width:235.66666666666666px">Only one is released per month</td></tr></tbody></table><h3 id="2a7bff97-475b-8097-b13d-e4b001426e52" class="">Placenta</h3><ul id="2a7bff97-475b-8004-a09e-f737aeee180b" class="bulleted-list"><li style="list-style-type:disc"><strong>Disc embedded in the uterine wall</strong>.</li></ul><ul id="2a7bff97-475b-8058-9dd1-fb2a86df1309" class="bulleted-list"><li style="list-style-type:disc"><strong>Provided nutrition to embryo from mother’s blood</strong>.</li></ul><ul id="2a7bff97-475b-8012-bac1-c8b1097ef62e" class="bulleted-list"><li style="list-style-type:disc">Villi on placenta provides a large surface area for:<ul id="2a7bff97-475b-80c5-8b9d-f68b3040829a" class="bulleted-list"><li style="list-style-type:circle">Glucose and oxygen to pass from the mother to the developing embryo.</li></ul><ul id="2a7bff97-475b-80a5-93b3-dc2dd28f9639" class="bulleted-list"><li style="list-style-type:circle">Wastes to pass from the embryo to the mother through placenta</li></ul></li></ul><h3 id="2a7bff97-475b-8036-a58e-f946ecb207e0" class="">Menstruation</h3><ul id="2a7bff97-475b-807b-83d0-dcad734d2915" class="bulleted-list"><li style="list-style-type:disc"><strong>The process of shedding the uterine lining leading to vaginal bleeding on a regular monthly basis</strong>.</li></ul><ul id="2a7bff97-475b-8001-baad-e32726ef2133" class="bulleted-list"><li style="list-style-type:disc">The ovary r<strong>eleases one egg every month</strong>.</li></ul><ul id="2a7bff97-475b-80a0-9bd1-f5cfca3c2b1b" class="bulleted-list"><li style="list-style-type:disc">The uterus also prepares itself every month to receive a fertilized egg.</li></ul><ul id="2a7bff97-475b-800c-baaa-cc5ac17fc343" class="bulleted-list"><li style="list-style-type:disc">Thus its lining become thick and spongy for nourishing the embryo if fertilization had taken place.</li></ul><ul id="2a7bff97-475b-80af-b891-ce0131d0d575" class="bulleted-list"><li style="list-style-type:disc">However, the lining is not needed any longer if fertilization does not occur.</li></ul><ul id="2a7bff97-475b-808a-bda3-c7eeb093dd3e" class="bulleted-list"><li style="list-style-type:disc"><strong>Menarche</strong> is the stage of <strong>beginning of menstruation</strong>.</li></ul><ul id="2a7bff97-475b-8072-9a6f-eb8eea8b545d" class="bulleted-list"><li style="list-style-type:disc"><strong>Menopause</strong> is the stage of <strong>stoppage of menstruation</strong>.</li></ul><h3 id="2a7bff97-475b-80e4-864d-c7fe8d38a73e" class="">Contraceptive Methods</h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-80da-bff0-e4248e0ccd35"><div style="width:100%"><p id="2a7bff97-475b-80d4-97cb-c3aeb3f9360f" class=""><mark class="highlight-blue"><strong>Physical and Mechanical Barrier:</strong></mark></p><ul id="2a7bff97-475b-8034-99d0-ec5fa9e5c3e0" class="bulleted-list"><li style="list-style-type:disc"><strong>To prevent union of sperm and egg.</strong></li></ul><ul id="2a7bff97-475b-8032-8735-dfb56ad9b61b" class="bulleted-list"><li style="list-style-type:disc">Protection from sexually transmitted diseases such as Gonorrhoea, HIV-AIDS, Syphilis, Warts.</li></ul><ul id="2a7bff97-475b-805c-abf0-e627e548b318" class="bulleted-list"><li style="list-style-type:disc"><strong>Example</strong>: Condoms</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-807a-8057-f844fd03714b"><div style="width:100%"><p id="2a7bff97-475b-8095-a8f4-eb586b19da0b" class=""><mark class="highlight-blue"><strong>Hormonal Barrier:</strong></mark></p><ul id="2a7bff97-475b-8097-93b4-cfe2386c985b" class="bulleted-list"><li style="list-style-type:disc"><strong>Oral contraceptive changes the hormonal balance to precent the egg release in females</strong>.</li></ul><ul id="2a7bff97-475b-8039-ba16-c32493159959" class="bulleted-list"><li style="list-style-type:disc">Taken orally.</li></ul><ul id="2a7bff97-475b-8096-ba75-f5df8a17193f" class="bulleted-list"><li style="list-style-type:disc"><strong>Oral contraceptive causes side effects</strong>.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-803d-8e6f-c28e6d6834fc"><div style="width:100%"><p id="2a7bff97-475b-80ef-ae71-dbe94211d168" class=""><mark class="highlight-blue"><strong>Intrauterine contraceptive device (IUCD):</strong></mark></p><ul id="2a7bff97-475b-8049-aed9-f8dc3f9d91c8" class="bulleted-list"><li style="list-style-type:disc"><strong>IUCD (Copper-T or loop) is placed in uterus to prevent pregnancy</strong>.</li></ul><ul id="2a7bff97-475b-8066-bb48-d1a737c7fbb9" class="bulleted-list"><li style="list-style-type:disc">Can cause irritation in uterus.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2a7bff97-475b-8086-a1d2-fb5974f39c6c"><div style="width:100%"><p id="2a7bff97-475b-807b-ae6b-fe59fa0f3ffc" class=""><mark class="highlight-blue"><strong>Surgical Barrier:</strong></mark></p><ul id="2a7bff97-475b-8025-975a-d1b42e1697b9" class="bulleted-list"><li style="list-style-type:disc"><strong>In Vasectomy, the vas deferens of male is blocked to prevent sperm transfer</strong>.</li></ul><ul id="2a7bff97-475b-8009-aa20-ce157b3169cc" class="bulleted-list"><li style="list-style-type:disc"><strong>In Tubectomy, the fallopian tube is blocked to prevent egg from reaching uterus</strong>. </li></ul></div></figure><p id="2a7bff97-475b-80a0-9bcd-e8dfbd389cfd" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishw Rana Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player">
+        <img class="cover" src="Song/LET THE WORLD BURN.jpeg" alt="Cover Image">
+        <h3 id="title">Let the World Burn</h3>
+        <p id="artist">Chris Grey</p>
+        <audio id="audio" src="Song/LET THE WORLD BURN.mp3"></audio>
+        <button id="playBtn">▶ Play</button>
+    </div>
+    </div>
+    <h1>Textbooks</h1>
+    <a href="Textbook/Sanskrit Textbook.pdf" target="_blank">Sanskrit Textbook PDF</a>
+    <h1>Maths</h1>
+    <h2>Chapter 8: Introduction to Trigonometry</h2>
+    <a href="Maths/Chapter 8/NCERT_CHAPTER_8.pdf" target="_blank">Chapter 8: NCERT IMP Questions</a>
+    <br>
+    <a href="Maths/Chapter 8/NOTES_CHAPTER_8.pdf" target="_blank">Chapter 8: Notes</a>
+    <h2>Chapter 10: Circles</h2>
+    <a href="Maths/Chapter 10/NOTES_CHAPTER_10.pdf" target="_blank">Chapter 10: Notes</a>
+    <br>
+    <a href="Maths/Chapter 10/NCERT_CHAPTER_10.pdf" target="_blank">Chapter 10: NCERT</a>
+    <h1>Chemistry</h1>
+    <h2>Chapter 3: Metals and Non-Metals</h2>
+    <a href="Science/Chapter 3 Metals and Non-Metals 2a5bff97475b80068b28c1c208c66fe9.html" target="_blank">Notes</a>
+    <h1>Biology</h1>
+    <h2>Chapter 3: How do Organisms Reproduce?</h2>
+    <a href="Science/Chapter 3 How do Organisms Reproduce 2a5bff97475b818d86b3e7463913fbfd.html" target="_blank">Notes</a>
+    <h1>English Prose</h1>
+    <a href="English/Chapter 1.html" target="_blank">Chapter 1: A Letter to God</a>
+    <h1>Guajarati</h1>
+    <h2>Chapter 3: પ્રયાણ</h2>
+    <a href="Gujarati/Chapter 3.pdf" target="_blank">Chapter 3: પ્રયાણ</a>
+    <script>
+        const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('playBtn');
+
+    // Try autoplay after a short delay (some browsers block it)
+    window.addEventListener('load', () => {
+      audio.play().then(() => {
+        playBtn.textContent = "⏸ Pause";
+      }).catch(() => {
+        // If autoplay is blocked, show Play button
+        playBtn.textContent = "▶ Play";
+      });
+    });
+
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = "⏸ Pause";
+      } else {
+        audio.pause();
+        playBtn.textContent = "▶ Play";
+      }
+    });
+  </script>
+</body>
+</html>
